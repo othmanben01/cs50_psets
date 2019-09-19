@@ -1,0 +1,63 @@
+**general notes**
+
+- What is a compile: Is a software program that take your source code and convert it to machine code (0s and 1s).
+
+- How to do it?: the commande line is "clang". "Ex: clang hello.c"
+
+- When you compile a source code, a machine code (.out) will be created. It has all the 0s and 1s.
+
+- What is a library: is just a collection of someone's code. such that: <cs50.h>
+
+- float generally use 32bits which gives you that many 0's and 1's with which to represent a floating point value or a real number.
+
+- If you use double instead of float, you get 64 bits.
+
+- 'Y': single quotes are used when we work with 1 single character.
+
+- "The": double quotes are used when we work with multiple characters.
+
+
+
+
+**linux command line notes**
+
+clang: Used to compile the source code.
+
+clang -o hello hello.c : "Hey computer take the hello.c as your input and output a file name called 'hello' "
+-o: is an argument
+
+ls" : "Hey computer, list all the files in the current folder".
+
+mkdir: is a command line used to create a folder in the current folder.
+
+cd: used to enter inside a directory (folder).
+
+cd ..: means "go back one directory" ~ "go to your parent".
+
+**parameters**
+
+%s: is a place holder and it type is "string".
+
+
+
+**functions**
+
+get_string: "Hey computer, go and get me a string".
+get_char: "if we want to get a character".
+get_int: "for integer".
+get_float: "for decimal number"
+get_double:
+get_long_long:
+
+
+**Important Notes**
+
+- You have to recompile your source code each time you make a changement on your source code.
+
+- if the type of the variable is like (int), we must only use %i as place holder of parameters.
+
+- if you use switch function, dont forget to use "break" with it.
+
+
+
+

@@ -1,0 +1,142 @@
+                            ****general notes****
+
+- help50 is a command line which gives you a help for debugging. Ex: help50 clang hello.c
+
+- When you compile with "clang". dont forget to include the library "#include <cs50.h>". + don't forget to link the library to
+the compiler (clang). Ex: for cs50.h you need to add this: clang hello.c -lcs50
+
+- all values are stored in forme of boxes. for example: the string is a SEQUENCE of characters. example: STELLOS is S-T-E-L-L-O-S
+
+- a string is a set of characters.
+
+- an array is a set of strings.
+
+- use debug50 to help debugging the logical bugs. ex: debug50 ./mario . is not debug the bug but make slow down the execution of the
+program.
+
+
+
+                                    ****if you forget how a function works****
+
+    first option:
+
+        tap man {your function} in the command line.
+
+    second option:
+
+        go see the cs50 reference
+
+
+
+                                    **the process between the source code and the machine code****
+
+    first one: Preprocessor
+
+            it find and replace the library teaser code like: #include .... (ex: #include <cs50.h>) by all the code existed in the library.
+
+    second step: Compiling
+
+        it takes all the code : library code + your source code. and converting it to assembly code.
+
+    third step: assembly code
+
+        is the code which the GPU understant. it's more proche the what the computer understand.
+
+    fourth step: assempling
+
+        it takes the assembly code and convert it to the computer code (0's and 1's).
+
+
+                                    ****scoop****
+
+is just the most recently open and closed curly braces. {....}.
+if you declare a variable in the scoop ({...}). it will stay only inside the scoop. So you can't use this variable inside another
+scoope.
+
+    types of scoops:
+
+        local variables:
+
+can only be accessed within the functions in which they are created.
+
+        global variables:
+
+can only be accessed by any function in the program.
+
+
+
+
+                                    ****debuging****
+
+use debug50 command line. ex: debug50 ./mario
+
+
+
+                                    ****data types****
+
+float, bool, int... it specify what type of a variable.
+
+and printf also comes with certain format codes: %i, %f, %d...
+
+bool: is 1 bit
+string: is null bits. so you can have as much as you need
+
+
+
+                                    ****how to access to a character from a string****
+
+use the syntax [ ]. for example: s[i]
+
+
+                                    ****functions****
+
+a function: is a black box which can has 0 or more inputs, and 1 output. (see the diagram lecture2/shorts).
+
+We use funtions because: for:
+1) organisation
+2) simplication: it's a lot of easier to debug 10 lines function versus 100 lines.
+3) reusability: for example: printf() function
+
+    steps to use a function:
+
+    - declaring the function to the compiler. we declare it before man() function.
+
+
+
+
+
+
+                                    ****somes functions****
+
+    for all:
+
+    add(a,b,c), mult(a,b,c)
+
+
+    for string (data type):
+
+        strlen(...)             in ... put the variable
+it gives you the lenght if a string.
+
+
+                                    ****Type Casting (ASCII)****
+
+
+is the letter converting it to an integer. ex: A = 65
+
+
+
+                                    ****Array****
+
+is a data structure.
+we use array to hold values of the same type at continuous memory locations. ex: groupe a bunch of integers, or strings, or char,
+or floats in memory really close together and work with them without having to gives each one it own name.
+
+
+
+
+
+
+
+
+
